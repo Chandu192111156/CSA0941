@@ -1,0 +1,26 @@
+import java.util.*;
+ class Exp {
+        void display()
+       {
+          try
+          {
+
+                 int b=10;
+                 int a=b/0;
+          }
+          catch(Exception e)
+          {
+                 System.out.println("exception has been developed");
+          }
+       }
+}
+public class Exceptions
+{
+       public static void main(String args[])
+       {
+
+              Exp e= new Exp();
+              e.display();
+
+       }
+}
