@@ -1,0 +1,19 @@
+class Example {
+    public void display() {  
+        System.out.println("name");
+    }
+}
+
+class Derived extends Example {
+
+    public void display() {
+        System.out.println("reg");
+    }
+}
+
+class Aa {
+    public static void main(String args[]) {
+        Derived e1 = new Derived();
+        e1.display();
+    }
+}
