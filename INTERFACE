@@ -1,0 +1,33 @@
+interface B
+{
+void display1();
+}
+interface C
+{
+void display2();
+}
+class D implements B,C
+{
+public void display1()
+{
+System.out.println("c class");
+}
+public void display2()
+{
+System.out.println(" D class");
+}
+}
+public class Ai
+{
+ public static void main(String a[])
+{
+  int count=0;
+  D obj1= new D();
+  count++;
+  D obj2= new D();
+  count++;
+  obj1.display1();
+  obj2.display2();
+System.out.println(count);
+}
+}
